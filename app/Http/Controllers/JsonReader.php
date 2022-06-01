@@ -16,16 +16,14 @@ class JsonReader extends Controller
 
         $orders = json_decode(file_get_contents(storage_path() . "/orders.json"), true);
         $tickets = json_decode(file_get_contents(storage_path() . "/tickets.json"), true);
-        $question3 = $this->CalculateMTotalVIP($orders, $tickets);
-        $question2 = $this->getHighestPayed($orders, $tickets);
-        $question4= $this->GetPaidBarcodes($orders, $tickets);
+        $question2 = $this->getHighestPayed($orders);
 
         $data = [
             'Question1'  => count($orders),
             'Question2First'  => $question2['orderer']['data']['first_name'] ,
             'Question2Last'  => $question2['orderer']['data']['last_name'],
-            'Question3'  => $question3,
-            'Question4'  => $question4,
+            'Question3'  => $this->CalculateMTotalVIP($orders, $tickets),
+            'Question4'  => $this->GetPaidBarcodes($orders),
             'orders'   => $orders,
             'tickets'   => $tickets
         ];
@@ -35,11 +33,11 @@ class JsonReader extends Controller
 
     private function CalculateMTotalVIP(mixed $orders, mixed $tickets)
     {
-        $Mynouk = array_where($orders, function($key, $value)
+        $Mynouk = array_where($orders, function($key)
         {
             return $key['orderer']['data']['first_name'] ==  'Mynouk' && $key['orderer']['data']['last_name'] ==  'van de Ven';
         });
-        $VIPPrice = array_where($tickets, function($key, $value)
+        $VIPPrice = array_where($tickets, function($key)
         {
             return $key['name'] ==  'VIP' ;
         });
@@ -51,7 +49,7 @@ class JsonReader extends Controller
         return count($totalVIPMynoak) * $PriceVIP;
     }
 
-    private function GetPaidBarcodes(mixed $orders, mixed $tickets)
+    private function GetPaidBarcodes(mixed $orders)
     {
         //14:00:00 2022-05-30
         $AfterDate = Carbon::create(2022, 05, 30, 14, 00, 00, "Europe/Amsterdam");
@@ -59,7 +57,7 @@ class JsonReader extends Controller
         $BeforeDate = Carbon::create(2022, 05, 30, 14, 05, 00, "Europe/Amsterdam");
 
         //date between
-        $payedBetween = array_where($orders, function($key, $value) use ($AfterDate, $BeforeDate) {
+        $payedBetween = array_where($orders, function($key) use ($AfterDate, $BeforeDate) {
             $date = Carbon::parse($key['payments'][0]['created_at']);
             return $date->gte($AfterDate) && $date->lte($BeforeDate);
         });
@@ -67,7 +65,7 @@ class JsonReader extends Controller
         //regular tickets
         $total = array();
         foreach ($payedBetween as $order){
-            $RegularTickets = array_where($order['purchases'], function($key, $value)
+            $RegularTickets = array_where($order['purchases'], function($key)
             {
                 return $key['ticket']['name'] == 'Regular';
             });
@@ -81,7 +79,7 @@ class JsonReader extends Controller
         return $barcodes;
     }
 
-    private function getHighestPayed(mixed $orders, mixed $tickets)
+    private function getHighestPayed(mixed $orders)
     {
         $collection = collect($orders);
         return $collection->max();
