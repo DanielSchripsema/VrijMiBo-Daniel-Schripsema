@@ -1,0 +1,266 @@
+[
+    {
+      "id": "mjpk1EgrNmM6APR4",
+      "name": "Regular",
+      "event_id": "ZgvLVEzpdmL2Wq9D",
+      "dates": [
+        {
+          "id": "mvbeBMkr9rp2yP4g",
+          "flat_date": "2024-07-05",
+          "starts_at": "2024-07-05T14:00:00.000000Z",
+          "ends_at": "2024-07-05T19:00:00.000000Z"
+        }
+      ],
+      "price": "9.99",
+      "capacity": 1000,
+      "min_order_amount": null,
+      "max_order_amount": null,
+      "template_id": "a5KgQw2vQjOPlAZJ",
+      "mobile_template_id": "dmvbeBMkx3EyP4gA",
+      "service_fee": 1.35,
+      "availability": [],
+      "fields": [
+        {
+          "id": "WqDbZmM5ywM4La93",
+          "name": {
+            "clean": "Telefoonnummer",
+            "slug": "phone"
+          },
+          "type": "text",
+          "is_required": false,
+          "ask_individually": false,
+          "ask_order": true
+        }
+      ],
+      "related_tickets": [],
+      "excluded_tickets": [],
+      "sale_percentage": {
+        "active": false,
+        "percentage": null
+      },
+      "on_fire": false,
+      "is_hidden": false,
+      "is_entry": true,
+      "tags": []
+    },
+    {
+      "id": "ZgvLVEzpbX2Wq9DP",
+      "name": "VIP",
+      "event_id": "ZgvLVEzpdmL2Wq9D",
+      "dates": [
+        {
+          "id": "mvbeBMkr9rp2yP4g",
+          "flat_date": "2024-07-05",
+          "starts_at": "2024-07-05T14:00:00.000000Z",
+          "ends_at": "2024-07-05T19:00:00.000000Z"
+        }
+      ],
+      "price": "29.99",
+      "capacity": 1000,
+      "min_order_amount": null,
+      "max_order_amount": null,
+      "template_id": "a5KgQw2vQjOPlAZJ",
+      "mobile_template_id": "dmvbeBMkx3EyP4gA",
+      "service_fee": 2.05,
+      "availability": [],
+      "fields": [
+        {
+          "id": "WqDbZmM5ywM4La93",
+          "name": {
+            "clean": "Telefoonnummer",
+            "slug": "phone"
+          },
+          "type": "text",
+          "is_required": false,
+          "ask_individually": false,
+          "ask_order": true
+        }
+      ],
+      "related_tickets": [],
+      "excluded_tickets": [],
+      "sale_percentage": {
+        "active": false,
+        "percentage": null
+      },
+      "on_fire": false,
+      "is_hidden": false,
+      "is_entry": true,
+      "tags": []
+    },
+    {
+      "id": "yvDnoOaWmoMR6p9J",
+      "name": "T-Shirt",
+      "event_id": "ZgvLVEzpdmL2Wq9D",
+      "dates": [
+        {
+          "id": "mvbeBMkr9rp2yP4g",
+          "flat_date": "2024-07-05",
+          "starts_at": "2024-07-05T14:00:00.000000Z",
+          "ends_at": "2024-07-05T19:00:00.000000Z"
+        }
+      ],
+      "price": "4.99",
+      "capacity": 1000,
+      "min_order_amount": null,
+      "max_order_amount": null,
+      "template_id": "a5KgQw2vQjOPlAZJ",
+      "mobile_template_id": "dmvbeBMkx3EyP4gA",
+      "service_fee": 1.17,
+      "availability": [],
+      "fields": [
+        {
+          "id": "WqDbZmM5ywM4La93",
+          "name": {
+            "clean": "Telefoonnummer",
+            "slug": "phone"
+          },
+          "type": "text",
+          "is_required": false,
+          "ask_individually": false,
+          "ask_order": true
+        }
+      ],
+      "related_tickets": [],
+      "excluded_tickets": [],
+      "sale_percentage": {
+        "active": false,
+        "percentage": null
+      },
+      "on_fire": false,
+      "is_hidden": false,
+      "is_entry": false,
+      "tags": []
+    },
+    {
+      "id": "zjDqg2Qmxd2QJlrv",
+      "name": "Unlimited Shots",
+      "event_id": "ZgvLVEzpdmL2Wq9D",
+      "dates": [
+        {
+          "id": "mvbeBMkr9rp2yP4g",
+          "flat_date": "2024-07-05",
+          "starts_at": "2024-07-05T14:00:00.000000Z",
+          "ends_at": "2024-07-05T19:00:00.000000Z"
+        }
+      ],
+      "price": "35.00",
+      "capacity": 1000,
+      "min_order_amount": null,
+      "max_order_amount": null,
+      "template_id": "a5KgQw2vQjOPlAZJ",
+      "mobile_template_id": "dmvbeBMkx3EyP4gA",
+      "service_fee": 2.23,
+      "availability": [],
+      "fields": [
+        {
+          "id": "WqDbZmM5ywM4La93",
+          "name": {
+            "clean": "Telefoonnummer",
+            "slug": "phone"
+          },
+          "type": "text",
+          "is_required": false,
+          "ask_individually": false,
+          "ask_order": true
+        }
+      ],
+      "related_tickets": [],
+      "excluded_tickets": [],
+      "sale_percentage": {
+        "active": false,
+        "percentage": null
+      },
+      "on_fire": false,
+      "is_hidden": false,
+      "is_entry": true,
+      "tags": []
+    },
+    {
+      "id": "L3DYVM4rLgOBJn4w",
+      "name": "Party Hat",
+      "event_id": "ZgvLVEzpdmL2Wq9D",
+      "dates": [
+        {
+          "id": "mvbeBMkr9rp2yP4g",
+          "flat_date": "2024-07-05",
+          "starts_at": "2024-07-05T14:00:00.000000Z",
+          "ends_at": "2024-07-05T19:00:00.000000Z"
+        }
+      ],
+      "price": "2.50",
+      "capacity": 1000,
+      "min_order_amount": null,
+      "max_order_amount": null,
+      "template_id": "a5KgQw2vQjOPlAZJ",
+      "mobile_template_id": "dmvbeBMkx3EyP4gA",
+      "service_fee": 1.09,
+      "availability": [],
+      "fields": [
+        {
+          "id": "WqDbZmM5ywM4La93",
+          "name": {
+            "clean": "Telefoonnummer",
+            "slug": "phone"
+          },
+          "type": "text",
+          "is_required": false,
+          "ask_individually": false,
+          "ask_order": true
+        }
+      ],
+      "related_tickets": [],
+      "excluded_tickets": [],
+      "sale_percentage": {
+        "active": false,
+        "percentage": null
+      },
+      "on_fire": false,
+      "is_hidden": false,
+      "is_entry": true,
+      "tags": []
+    },
+    {
+      "id": "Nk7n02R0VrEad3Lx",
+      "name": "Ping Pong Snoepje",
+      "event_id": "ZgvLVEzpdmL2Wq9D",
+      "dates": [
+        {
+          "id": "mvbeBMkr9rp2yP4g",
+          "flat_date": "2024-07-05",
+          "starts_at": "2024-07-05T14:00:00.000000Z",
+          "ends_at": "2024-07-05T19:00:00.000000Z"
+        }
+      ],
+      "price": "1.00",
+      "capacity": 1000,
+      "min_order_amount": null,
+      "max_order_amount": null,
+      "template_id": "a5KgQw2vQjOPlAZJ",
+      "mobile_template_id": "dmvbeBMkx3EyP4gA",
+      "service_fee": 1.04,
+      "availability": [],
+      "fields": [
+        {
+          "id": "WqDbZmM5ywM4La93",
+          "name": {
+            "clean": "Telefoonnummer",
+            "slug": "phone"
+          },
+          "type": "text",
+          "is_required": false,
+          "ask_individually": false,
+          "ask_order": true
+        }
+      ],
+      "related_tickets": [],
+      "excluded_tickets": [],
+      "sale_percentage": {
+        "active": false,
+        "percentage": null
+      },
+      "on_fire": false,
+      "is_hidden": false,
+      "is_entry": true,
+      "tags": []
+    }
+  ]
